@@ -16,14 +16,11 @@ var interest = principal * years * rate /100;
 {
     var principal = document.getElementById("principal").value;
 if(principal<=0){ //Checks and sends an alert of the value of principal being less or equal to 0
-   $.alert({  //then creates an alert an once it hits ok it focueses on the principal input field
-      title: 'Alert!',
-      content: 'Enter a positive number',
-      onDestroy: function() {
-        // here the button key 'hey' will be used as the text.
-        $('#Principal').focus();
-      }
-})};
+     //then creates an alert an once it hits ok it focueses on the principal input field
+    
+alert("Enter a positive number");
+principal.focus();
+};
 var rate = document.getElementById("rate").value //brings all the values from the html
 var years = document.getElementById("years").value;
 var interest = principal * years * rate /100;
